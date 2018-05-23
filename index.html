@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="thoughts" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <title>Thoughts</title>
+</head>
+<body>
+
+<social-posts></social-posts>
+
+
+<!-- 1. Displays a list of posts including a subject line and a body for each.
+2. The new post form is initially hidden. Clicking the “New Post” button reveals the form.
+3. Submitting the form adds a new post to the top of the list and hides the form.
+4. Form inputs expand when focused. -->
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script>
+    <script src="js/module/thoughts.js"></script>
+    <script src="js/components/socialPosts.js"></script>
+    <script src="js/components/postForm.js"></script>
+    <script src="js/components/post.js"></script>
+    <script src="js/directive/expandOnFocus.js"></script>
+</body>
+</html>
